@@ -1,0 +1,21 @@
+*{
+    background-color: green;
+    font-family: 'Bangers', cursive;
+}
+
+h1{
+    width: auto;
+    margin-left: 10%;
+    border: 2px solid black;
+    display: inline-block;
+    line-height: 60px;
+}
+
+p{
+    font-size: 50px;
+    display: inline-block;
+    line-height: 60px;
+    border: 2px solid black;
+    height: 200px;
+
+}
