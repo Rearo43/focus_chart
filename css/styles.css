@@ -2,12 +2,17 @@ body{
     background-color: rgb(192, 209, 219);
 }
 
+header{
+    margin-top: -5vh;
+}
+
 h1{
     width: auto;
-    margin-left: 10%;
-    border: 2px solid black;
+    margin-left: 5%;
+    /* border: 2px solid black; */
     display: inline-block;
-    line-height: 60px;
+    font-size: 100px;
+    /* line-height: 60px; */
 }
 
 h1, th{
@@ -15,26 +20,41 @@ h1, th{
 
 }
 
-p{
-    font-size: 50px;
-    display: inline-block;
-    line-height: 60px;
-    border: 2px solid black;
-    height: 200px;
-
-}
-
-  td{
-    /* border: 2px solid black; */
+td{
     border-collapse: collapse;
     border-top: 2px solid black;
 }
 
 article{
     display: flex;
+    width: 80%;
+    margin: auto;
+    background:#FFF;
+    position: relative;
 }
 
+article::before, article::after{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 25px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  box-shadow: 0 35px 20px #777;
+  transform: rotate(-8deg);
+}
+
+article::after{
+    transform: rotate(8deg);
+    right: 10px;
+    left: auto;
+}
 table{
     background-color: honeydew;
-    margin: 10%;
+    margin: 5%;
+    font-size: 30px;
+    width: 45%;
 }
