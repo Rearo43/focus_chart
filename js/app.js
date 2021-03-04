@@ -1,3 +1,12 @@
 'use strict'
+$('#form').hide()
+console.log($('#passTry').val);
 
-console.log('working');
+
+function password() {
+    let passTry = $('#passTry').val;
+
+    if(passTry === 'password') {
+        $('#form').show();
+    }
+}

@@ -159,11 +159,14 @@
         <section>
             <label for="text">Enter Password to Alter Children's Earnings</label>
         </br>
+        <form action="">
             <input type="text" placeholder="Password">
-            <form action="">
+            <button type="submit" id="passTry" >Submit</button>
+            </form>
+            <form action="" id="form">
                 <div>
                     <label for="kids">Choose Child's Name</label>
-                    <select name="" id="">
+                    <select name="" id="kids">
                         <option value="Jasmine">Jasmine</option>
                         <option value="Chelsea">Chelsea</option>
                         <option value="Eli V">Eli V</option>
@@ -179,10 +182,10 @@
                         <option value="Carter">Carter</option>
                     </select>
                     <label for="add">Earn</label>
-                    <input type="radio" name="addSub" id="">or
+                    <input type="radio" name="addSub" id="add">or
                     <label for="sub">Lost</label>
-                    <input type="radio" name="addSub" id="">
-                    <input type="number" placeholder="1" min="1" name="" id="">
+                    <input type="radio" name="addSub" id="sub">
+                    <input type="number" placeholder="1" min="1" name="" id="amount">
                 </div>
             </form>
         </section>
